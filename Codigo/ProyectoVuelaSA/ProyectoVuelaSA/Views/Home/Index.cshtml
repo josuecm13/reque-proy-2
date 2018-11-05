@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Pagina Principal";
+}
+
+
+<div class="jumbotron">
+    <h1 style="color:#9CA6AD;text-align:center">Vuela S.A</h1>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group" align="center">
+        ID usuario
+        @Html.TextBox("usuario", null, new { @class = "form-control" })
+    </div>
+    <div class="form-group" align="center">
+        Contraseña
+        @Html.TextBox("contrasena", null, new { @class = "form-control" })
+    </div>
+
+    <div align="center">
+        <input type="button" class="btn btn-default" name="btSubmit" style="background-color:#1A2A40; color:#9CA6AD " value="Iniciar Sesion" />
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <button type="button" class="btn btn-default">
+            @Html.ActionLink("Crear cuenta", "Create", "usuarios")
+        </button>
+    </div>
+</div>
