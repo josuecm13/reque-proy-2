@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Cliente";
+    Layout = "~/Views/Shared/layoutVacio.cshtml";
+}
+
+<h2>Cliente</h2>
+
+@if(Session["IDUsuario"] != null)
+{
+    <h4>Bienvenido @Session["IDUsuario"].ToString() </h4>
+}
+
