@@ -158,6 +158,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\usuariosController.cs" />
+    <Compile Include="Controllers\vuelosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -261,6 +262,12 @@
     <Content Include="Views\Shared\layoutVacio.cshtml" />
     <Content Include="Views\Home\Cliente.cshtml" />
     <Content Include="Views\Home\Administrador.cshtml" />
+    <Content Include="Views\vuelos\Create.cshtml" />
+    <Content Include="Views\vuelos\Delete.cshtml" />
+    <Content Include="Views\vuelos\Details.cshtml" />
+    <Content Include="Views\vuelos\Edit.cshtml" />
+    <Content Include="Views\vuelos\Index.cshtml" />
+    <Content Include="Views\vuelos\SelectedFlight.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

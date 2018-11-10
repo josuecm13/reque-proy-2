@@ -1,0 +1,36 @@
+﻿@model ProyectoVuelaSA.Models.vuelo
+@{
+    ViewBag.Title = "SelectedFlight";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="clear: both">
+    <h1 style="float: left"> @Model.aeropuerto.ciudadnombre + " (" + @Model.aeropuerto.idaeropuerto + ") ⟶" @Model.aeropuerto1.ciudadnombre + " (" + @Model.aeropuerto1.idaeropuerto + ") </h1>
+    <h3 style="float: right"> @Model.fechasalida.ToString() </h3>
+</div>
+<hr />
+
+
+<div style="clear: both">
+    <h3 style="float: left">@Html.DisplayNameFor(model => model.aeropuertosalida)</h3>
+    <h3 style="float: left">@Html.DisplayNameFor(model => model.aeropuertodestino)</h3>
+</div>
+
+<div style="clear: both">
+    <h4 style="float: left"> @Model.aeropuerto.ciudadnombre</h4>
+    <h4 style="float: left"> @Model.aeropuerto1.ciudadnombre</h4>
+</div>
+
+<div style="clear: both">
+    <h3 style="float: left"> Precio</h3>
+    <h3 style="float: left"> Escalas</h3>
+</div>
+
+<div style="clear: both">
+    <h4 style="float: left"> </h4>
+    <h4 style="float: left"> </h4>
+</div>
+
+@using (Html.BeginForm())
+{
+    <input type="button" name="button" class="button1" value="Comprar" />
+}

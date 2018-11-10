@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ProyectoVuelaSA.Models.vuelo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fechasalida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechallegada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precioturista)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precioejecutiva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precioprimeraclase)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aeropuerto.ciudadnombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aeropuerto1.ciudadnombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechasalida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechallegada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precioturista)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precioejecutiva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precioprimeraclase)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aeropuerto.ciudadnombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aeropuerto1.ciudadnombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idvuelo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idvuelo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idvuelo })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,75 @@
+﻿@model ProyectoVuelaSA.Models.vuelo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>vuelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fechasalida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechasalida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechallegada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechallegada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioturista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioturista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioejecutiva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioejecutiva)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precioprimeraclase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precioprimeraclase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aeropuerto.ciudadnombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aeropuerto.ciudadnombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aeropuerto1.ciudadnombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aeropuerto1.ciudadnombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idvuelo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
