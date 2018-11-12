@@ -156,6 +156,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\administradoresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\usuariosController.cs" />
     <Compile Include="Global.asax.cs">
@@ -261,6 +262,10 @@
     <Content Include="Views\Shared\layoutVacio.cshtml" />
     <Content Include="Views\Home\Cliente.cshtml" />
     <Content Include="Views\Home\Administrador.cshtml" />
+    <Content Include="Views\administradores\Create.cshtml" />
+    <Content Include="Views\Shared\LayoutCliente.cshtml" />
+    <Content Include="Views\administradores\BoardingPass.cshtml" />
+    <Content Include="Views\administradores\CheckIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

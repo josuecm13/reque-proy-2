@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,10 +21,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Principal", "Administrador", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("Verificar Boarding Pass", "BoardingPass", "administradores", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("Registrar Admin", "Create", "administradores", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    <li style="padding-left: 550px;">@Html.ActionLink("Salir", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</listyle="padding-left:>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+ 
                 </ul>
             </div>
         </div>

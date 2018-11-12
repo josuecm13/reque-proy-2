@@ -25,7 +25,7 @@ namespace ProyectoVuelaSA.Controllers
             if(usuario != null)
             {
                 Session["IDUsuario"] = usuario.idusuario;
-                if(usuario.pasaporte != null)
+                if(usuario.pasaporte != null && usuario.pasaporte != 0)
                 {
                     return RedirectToAction("Cliente");
                 }
@@ -64,7 +64,6 @@ namespace ProyectoVuelaSA.Controllers
                 return RedirectToAction("Index");
             }
         }
-
     }
 }
 
